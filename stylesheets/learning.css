@@ -1,0 +1,94 @@
+.learning-section {
+  margin-bottom: 4rem;
+}
+
+.learning-circles {
+  font-family: "Permanent Marker";
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 2rem;
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+.learning-circle {
+  border: 2px solid #333533;
+  border-radius: 50%;
+  height: 6rem;
+  width: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+}
+
+#javascript {
+  background: #FFE0D7;
+}
+
+#typescript {
+  background: #FFD4CC;
+}
+
+#css {
+  background: #FFC8C0;
+}
+
+#tailwind {
+  background: #FFBDB5;
+}
+
+#react {
+  background: #FFB3AE;
+}
+
+#sql {
+  background: #FFA7A4;
+}
+
+/*
+#A23E48
+
+#E4C5AF
+#EABDA8 *
+#EFD0CA
+#FFCDBC
+#FCC8B2 *
+#FFEDE1
+
+#FBD1A2
+#F5D0C5 ***
+#FFC49B
+#E8985E
+#FFB86F
+#E5B181
+#DE6B48
+#FF9B85
+#EFA48B *
+#FF9B85
+*/
+
+.learning-circle:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 800px) {
+  .learning-circles {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    max-width: 100%;
+  }
+
+  .learning-circle {
+    height: 6rem;
+    width: 6rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .learning-circle {
+    height: 8rem;
+    width: 8rem;
+  }
+}
