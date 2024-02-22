@@ -1,3 +1,5 @@
+// STORY
+
 const storySubheaders = document.querySelectorAll(".story-subheader");
 const storySnippets = document.querySelectorAll(".story-snippet");
 
@@ -22,3 +24,32 @@ function activeTab(section) {
   const clickedSnippet = document.getElementById(`${section}-snippet`);
   clickedSnippet.classList.remove("hidden");
 }
+
+
+
+// LEARNING
+
+const learningCircles = document.querySelectorAll(".learning-circle");
+const learningCerts = document.querySelectorAll(".learning-cert");
+const overlay = document.querySelector(".overlay");
+
+learningCircles.forEach((circle) => {
+  circle.addEventListener("click", () => {
+    activeCircle(circle.id);
+  })
+})
+
+function activeCircle(cert) {
+  const activeCert = document.getElementById(`${cert}-cert`);
+  activeCert.classList.remove("hidden");
+
+  overlay.classList.remove("hidden");
+}
+
+
+overlay.addEventListener("click", () => {
+  overlay.classList.add("hidden");
+  learningCerts.forEach((cert) => {
+    cert.classList.add("hidden");
+  })
+})

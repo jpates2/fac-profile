@@ -22,6 +22,17 @@
   justify-self: center;
 }
 
+.learning-cert {
+  z-index: 10;
+  border-radius: 16px;
+  position: fixed;
+  max-width: 90%;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 #javascript {
   background: #FFE0D7;
 }
@@ -46,28 +57,6 @@
   background: #FFA7A4;
 }
 
-/*
-#A23E48
-
-#E4C5AF
-#EABDA8 *
-#EFD0CA
-#FFCDBC
-#FCC8B2 *
-#FFEDE1
-
-#FBD1A2
-#F5D0C5 ***
-#FFC49B
-#E8985E
-#FFB86F
-#E5B181
-#DE6B48
-#FF9B85
-#EFA48B *
-#FF9B85
-*/
-
 .learning-circle:hover {
   cursor: pointer;
 }
@@ -83,6 +72,10 @@
   .learning-circle {
     height: 6rem;
     width: 6rem;
+  }
+
+  .learning-cert {
+    max-width: 60%;
   }
 }
 
