@@ -20,6 +20,7 @@
   align-items: center;
   justify-content: center;
   justify-self: center;
+  transition: transform 1s ease-in-out;
 }
 
 .learning-cert {
@@ -59,6 +60,7 @@
 
 .learning-circle:hover {
   cursor: pointer;
+  transform: rotateY(360deg);
 }
 
 @media (min-width: 800px) {
