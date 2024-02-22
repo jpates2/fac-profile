@@ -1,0 +1,96 @@
+.story-section {
+  margin-bottom: 4rem;
+  padding: 0 0.5rem;
+}
+
+.story-header {
+  font-family: "Permanent Marker";
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+}
+
+.story-details {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.story-subheaders {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.story-subheader {
+  font-family: "Permanent Marker";
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 2px solid #333533;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.story-subheader-active {
+  background: #F5D0C5;
+}
+
+.story-subheader-last {
+  margin-bottom: 0;
+}
+
+.story-subheader:hover {
+  cursor: pointer;
+}
+
+.story-text-section {
+  border: 2px solid #333533;
+  border-radius: 16px;
+  padding: 2rem;
+}
+
+.story-text-title {
+  text-align: center;
+  font-family: "Permanent Marker";
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.story-text {
+  line-height: 1.5rem;
+  text-align: justify;
+}
+
+@media (min-width: 800px) {
+  .story-section {
+    padding: 0 2rem;
+  }
+
+  .story-header {
+    font-size: 2rem;
+    margin-left: 0;
+  }
+
+  .story-subheaders {
+    margin-top: 0;
+  }
+
+  .story-subheader {
+    width: 12rem;
+  }
+
+  .story-details {
+    margin: 0 2vw;
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  .story-text-section {
+    padding: 3rem;
+    margin-left: 2rem;
+  }
+
+  .story-text-title {
+    font-size: 2rem;
+  }
+}

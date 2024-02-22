@@ -1,4 +1,5 @@
 @import "hero.css";
+@import "story.css";
 
 body {
   margin: 0;
@@ -11,6 +12,21 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+.hidden {
+  display: none;
+}
+
+/* .page-section {
+  padding: 0 2rem;
+} */
+
+@media (min-width: 800px) {
+  .page-section {
+    padding: 0 4rem;
+  }
+}
+
 
 /*
 fonts
@@ -49,5 +65,29 @@ Pinks
 #DE6B48
 #FF9B85
 #EFA48B
+#FF9B85
+*/
+
+
+
+
+
+/*
+#E4C5AF
+#EABDA8 *
+#EFD0CA
+#FFCDBC
+#FCC8B2 *
+#FFEDE1
+
+#FBD1A2
+#F5D0C5 *
+#FFC49B
+#E8985E
+#FFB86F
+#E5B181
+#DE6B48
+#FF9B85
+#EFA48B *
 #FF9B85
 */
