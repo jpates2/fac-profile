@@ -1,3 +1,10 @@
+// SCROLL TO TOP
+
+addEventListener("load", (event) => {
+  window.scrollTo(0, 0)
+});
+
+
 // STORY
 
 const storySubheaders = document.querySelectorAll(".story-subheader");
