@@ -2,6 +2,7 @@
 @import "story.css";
 @import "learning.css";
 @import "projects.css";
+@import "footer.css";
 
 body {
   margin: 0;

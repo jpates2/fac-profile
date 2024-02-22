@@ -1,0 +1,13 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: "Permanent Marker";
+  height: 6rem;
+  margin-bottom: 1rem;
+}
+
+.footer-link {
+  font-size: 1.5rem;
+}
