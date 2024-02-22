@@ -1,0 +1,53 @@
+@import "hero.css";
+
+body {
+  margin: 0;
+  font-family: "Onest";
+  background: #FFEDE1;
+  color: #333533;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/*
+fonts
+#5E565A
+#474954
+#242423
+#333533
+
+whites
+#FDFFFC
+#E7ECEF
+#FEF5EF
+#F9FBF2
+
+
+creams
+#FFEFD3
+#FFEED6
+#ECE4B7
+#F7ECE1
+
+Pinks
+#E4C5AF
+#EABDA8
+#EFD0CA
+#FFCDBC
+#FCC8B2
+#FFEDE1
+
+#FBD1A2
+#F5D0C5
+#FFC49B
+#E8985E
+#FFB86F
+#E5B181
+#DE6B48
+#FF9B85
+#EFA48B
+#FF9B85
+*/
