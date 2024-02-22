@@ -23,6 +23,7 @@
   padding: 2rem;
   height: 28rem;
   min-width: 12rem;
+  position: relative;
 }
 
 .project-header {
@@ -33,10 +34,16 @@
 
 .project-text {
   margin-bottom: 1rem;
+  text-align: justify;
 }
 
 .project-links {
   font-size: 1.2rem;
+  width: 4rem;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 2rem;
 }
 
 @media (min-width: 800px) {
