@@ -1,0 +1,55 @@
+.projects {
+  display: flex;
+  overflow: auto;
+  gap: 2rem;
+  cursor: grab;
+}
+
+.projects:active {
+  cursor: grabbing;
+}
+
+.projects::-webkit-scrollbar {
+  width: 0;
+}
+
+.projects {
+  scrollbar-width: none;
+}
+
+.project {
+  border: 2px solid #333533;
+  border-radius: 16px;
+  padding: 2rem;
+  height: 24rem;
+  min-width: 16rem;
+}
+
+.project-header {
+  font-family: "Permanent Marker";
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.project-text {
+  margin-bottom: 1rem;
+}
+
+.project-links {
+  font-size: 1.2rem;
+}
+
+@media (min-width: 800px) {
+  .project-header {
+    font-size: 1.5rem;
+  }
+
+  .project-links {
+    font-size: 1.5rem;
+  }
+
+  .project {
+    height: 16rem;
+    min-width: 24rem;
+  }
+}

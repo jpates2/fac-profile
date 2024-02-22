@@ -1,6 +1,7 @@
 @import "hero.css";
 @import "story.css";
 @import "learning.css";
+@import "projects.css";
 
 body {
   margin: 0;

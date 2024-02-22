@@ -53,3 +53,34 @@ overlay.addEventListener("click", () => {
     cert.classList.add("hidden");
   })
 })
+
+
+// PROJECTS
+
+const projects = document.querySelector(".projects");
+
+let isDown = false;
+let startX;
+let scrollLeft;
+
+projects.addEventListener("mousedown", (e) => {
+  isDown = true;
+  startX = e.pageX - projects.offsetLeft;
+  scrollLeft = projects.scrollLeft;
+});
+
+projects.addEventListener("mouseleave", () => {
+  isDown = false;
+});
+
+projects.addEventListener("mouseup", () => {
+  isDown = false;
+});
+
+projects.addEventListener("mousemove", (e) => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.pageX - projects.offsetLeft;
+  const move = (x - startX);
+  projects.scrollLeft = scrollLeft - move;
+});
