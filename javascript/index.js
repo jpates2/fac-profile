@@ -5,6 +5,21 @@ window.onbeforeunload = function () {
 }
 
 
+// SMOOTH SCROLL
+
+const storyLinks = document.querySelectorAll(".story-link");
+const storyTop = document.querySelector("#story-top");
+
+storyLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    console.log("story");
+    storyTop.scrollIntoView({
+      behavior: "smooth"
+    })
+  });
+});
+
+
 // STORY
 
 const storySubheaders = document.querySelectorAll(".story-subheader");
