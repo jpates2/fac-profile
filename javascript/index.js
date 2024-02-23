@@ -1,8 +1,8 @@
 // SCROLL TO TOP
 
-addEventListener("load", (event) => {
-  window.scrollTo(0, 0)
-});
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
 
 
 // STORY
@@ -91,3 +91,25 @@ projects.addEventListener("mousemove", (e) => {
   const move = (x - startX);
   projects.scrollLeft = scrollLeft - move;
 });
+
+
+// SCROLL
+
+const pageSections = document.querySelectorAll(".page-section");
+
+function revealSection(entries, observer) {
+  const [entry] = entries;
+  if (!entry.isIntersecting) return;
+  entry.target.classList.remove("section-hidden");
+  sectionObserver.unobserve(entry.target);
+}
+
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  threshold: 0.15
+})
+
+pageSections.forEach((section) => {
+  sectionObserver.observe(section);
+  section.classList.add("section-hidden");
+})

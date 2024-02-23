@@ -23,6 +23,12 @@ a {
 .page-section {
   padding: 0 0.5rem;
   margin-bottom: 6rem;
+  transition: all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.3s;
+}
+
+.section-hidden {
+  opacity: 0;
+  transform: translateY(4rem);
 }
 
 .section-header {
