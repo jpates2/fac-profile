@@ -4,4 +4,4 @@ Profile site with information about me and my motivations for being a web develo
 
 Built using vanilla JS, HTML and CSS.
 
-:round_pushpin: (https://jpates2.github.io/fac-profile/)
+:round_pushpin: https://jpates2.github.io/fac-profile/
