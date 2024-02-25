@@ -19,6 +19,7 @@
   opacity: 0;
   animation: appear-down 1s ease-in-out forwards;
   animation-delay: 0.5s;
+  text-align: center;
 }
 
 .hero-img {
