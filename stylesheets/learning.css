@@ -60,7 +60,6 @@
 
 .learning-circle:hover {
   cursor: pointer;
-  transform: rotateY(360deg);
 }
 
 @media (min-width: 800px) {
@@ -78,6 +77,12 @@
 
   .learning-cert {
     max-width: 60%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .learning-circle:hover {
+    transform: rotateY(360deg);
   }
 }
 
